@@ -38,10 +38,7 @@ public class FabricaCafe {
         ingredientes.add(fabrica.criarLeite());
         ingredientes.add(fabrica.criarSoluvel());
         ingredientes.add(fabrica.criarZeroCafeina());
- 
-        for (int i=0; i< ingredientes.size(); i++){
-            System.out.println(ingredientes.get(i));
-        }
+
         
         cafe.setIngredientes(ingredientes);
 

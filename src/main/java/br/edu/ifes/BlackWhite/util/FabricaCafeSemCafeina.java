@@ -13,6 +13,12 @@ import br.edu.ifes.BlackWhite.cdp.*;
  */
 public class FabricaCafeSemCafeina extends FabricaCafeAbstrata {
 
+    
+    @Override
+    public Cafe criarCafe() {
+        return new Cafe(3.0);
+    }
+    
     public FabricaCafeSemCafeina(){
         
         this.zeroCafeina = new ZeroCafeina(50);
