@@ -17,6 +17,12 @@ public class Cafe {
     
     public Cafe() {
     }
+
+    public Cafe(double preco) {
+        this.preco = preco;
+    }
+    
+    
     
     public Cafe(int preco, ArrayList<Ingrediente> ingrediente){
         this.preco = preco;

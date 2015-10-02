@@ -8,6 +8,8 @@ import br.edu.ifes.BlackWhite.cdp.*;
 import br.edu.ifes.BlackWhite.cdp.Agua;
 import br.edu.ifes.BlackWhite.util.FabricaCafe;
 import br.edu.ifes.BlackWhite.util.FabricaCafeCappucino;
+import br.edu.ifes.BlackWhite.util.FabricaCafeNormal;
+import br.edu.ifes.BlackWhite.util.FabricaCafeSemCafeina;
 import junit.framework.TestCase;
 
 /**
@@ -81,4 +83,13 @@ public class Testes extends TestCase {
         assertEquals(fcc.criarAcucar().toString(), "2 xicara de acucar");
     }
     
+    public void testFabricaCafeNormal() {
+        FabricaCafeNormal fcn = new FabricaCafeNormal();
+        assertEquals(fcn.criarAgua().toString(), "100 ml de agua");
+    }
+    
+    public void testFabricaCafeSemCafeina() {
+        FabricaCafeSemCafeina fcs = new FabricaCafeSemCafeina();
+        assertEquals(fcs.criarZeroCafeina().toString(), "50 gramas de cafe sem cafeina");
+    }
 }

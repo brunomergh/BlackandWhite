@@ -13,6 +13,11 @@ import br.edu.ifes.BlackWhite.cdp.*;
  */
 public class FabricaCafeNormal extends FabricaCafeAbstrata{
 
+    @Override
+    public Cafe criarCafe() {
+        return new Cafe(2.0);
+    }
+    
     public FabricaCafeNormal(){
         
         this.soluvel = new Soluvel(50);
