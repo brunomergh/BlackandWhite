@@ -16,6 +16,6 @@ public class Leite extends Ingrediente{
     }
     @Override
     public String toString() {
-        return qtd + "ml de leite";
+        return qtd + " ml de leite";
     }    
 }

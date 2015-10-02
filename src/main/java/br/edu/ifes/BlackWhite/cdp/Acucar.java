@@ -17,6 +17,6 @@ public class Acucar extends Ingrediente {
     
     @Override
     public String toString() {
-        return qtd + "xicara de acucar";
+        return qtd + " xicara de acucar";
     }
 }

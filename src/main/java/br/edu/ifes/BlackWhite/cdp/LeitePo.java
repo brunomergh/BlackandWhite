@@ -16,6 +16,6 @@ public class LeitePo extends Ingrediente{
     }
     @Override
     public String toString() {
-        return qtd + "gramas de leite";
+        return qtd + " gramas de leite em po";
     }    
 }

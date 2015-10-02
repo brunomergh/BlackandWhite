@@ -16,6 +16,6 @@ public class Canela extends Ingrediente {
     }
     @Override
     public String toString() {
-        return qtd + "colher de canela";
+        return qtd + " colher de canela";
     }    
 }

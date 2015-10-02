@@ -16,6 +16,6 @@ public class Agua extends Ingrediente {
     }
     @Override
     public String toString() {
-        return qtd + "ml de agua";
+        return qtd + " ml de agua";
     }
 }

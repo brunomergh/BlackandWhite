@@ -16,6 +16,6 @@ public class Bicarbonato extends Ingrediente{
     }
      @Override
     public String toString() {
-        return qtd + "colher de bicarbonato";
+        return qtd + " colher de bicarbonato";
     }   
 }

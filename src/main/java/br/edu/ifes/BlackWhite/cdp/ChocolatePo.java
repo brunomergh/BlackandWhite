@@ -16,6 +16,6 @@ public class ChocolatePo extends Ingrediente {
     }
      @Override
     public String toString() {
-        return qtd + "colher de chocolate em po";
+        return qtd + " colher de chocolate em po";
     }   
 }

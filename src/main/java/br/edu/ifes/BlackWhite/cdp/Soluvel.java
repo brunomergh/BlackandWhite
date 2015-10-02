@@ -16,6 +16,6 @@ public class Soluvel extends Ingrediente{
     }
      @Override
     public String toString() {
-        return qtd + "gramas de cafe soluvel";
-    }   
+        return qtd + " gramas de cafe soluvel";
+    }    
 }

@@ -16,6 +16,6 @@ public class ZeroCafeina extends Ingrediente {
     }
     @Override
     public String toString() {
-        return qtd + "gramas de cafe sem cafeina";
+        return qtd + " gramas de cafe sem cafeina";
     }  
 }

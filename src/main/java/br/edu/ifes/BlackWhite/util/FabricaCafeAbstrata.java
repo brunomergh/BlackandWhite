@@ -36,12 +36,12 @@ public class FabricaCafeAbstrata implements Fabrica{
     public FabricaCafeAbstrata()
     {
         this.agua = new Agua(100);
-        this.acucar = new Acucar(200);
+        this.acucar = new Acucar(2);
         
     }
     
     public Cafe criarCafe(){
-        return cafe;
+        return new Cafe();
     }
     
     public Agua criarAgua(){

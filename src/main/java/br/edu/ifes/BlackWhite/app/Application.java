@@ -15,7 +15,7 @@ import br.edu.ifes.BlackWhite.util.FabricaCafe;
 public class Application {
     public static void main(String args[]) {
         Cafe cafe = new Cafe();
-        cafe = FabricaCafe.criarCafe("cappucino");
+        cafe = FabricaCafe.criarCafe("normal");
         System.out.println("cafe: " + cafe);
     }
 }
