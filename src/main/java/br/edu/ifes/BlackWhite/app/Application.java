@@ -8,10 +8,6 @@ package br.edu.ifes.BlackWhite.app;
 import br.edu.ifes.BlackWhite.cdp.Cafe;
 import br.edu.ifes.BlackWhite.util.FabricaCafe;
 
-
-
-
-
 /**
  *
  * @author Bruno
@@ -19,7 +15,7 @@ import br.edu.ifes.BlackWhite.util.FabricaCafe;
 public class Application {
     public static void main(String args[]) {
         Cafe cafe = new Cafe();
-        cafe = FabricaCafe.criarCafe("zero cafeina");
+        cafe = FabricaCafe.criarCafe("cappucino");
         System.out.println("cafe: " + cafe);
     }
 }

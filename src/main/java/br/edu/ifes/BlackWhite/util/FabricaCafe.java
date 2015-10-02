@@ -6,6 +6,8 @@
 package br.edu.ifes.BlackWhite.util;
 
 import br.edu.ifes.BlackWhite.cdp.Cafe;
+import br.edu.ifes.BlackWhite.cdp.Ingrediente;
+import java.util.ArrayList;
 
 /**
  *
@@ -21,11 +23,24 @@ public class FabricaCafe {
         }else if(nome.equals("zero cafeina")) {
             fabrica = new FabricaCafeSemCafeina();            
         }else {
-            fabrica = new FabricaCafeCappucino();                        
+            fabrica = new FabricaCafeCappucino(); 
         }
-        
+
         Cafe cafe = fabrica.criarCafe();
-        cafe.setIngredientes(fabrica.criarIngrediente());
+        
+        ArrayList<Ingrediente> ingredientes = new ArrayList<Ingrediente>();
+        
+        ingredientes.add(fabrica.criarAgua());
+        ingredientes.add(fabrica.criarAcucar());
+        ingredientes.add(fabrica.criarBicarbonato());
+        ingredientes.add(fabrica.criarCanela());
+        ingredientes.add(fabrica.criarLeitePo());
+        ingredientes.add(fabrica.criarLeite());
+        ingredientes.add(fabrica.criarSoluvel());
+        ingredientes.add(fabrica.criarZeroCafeina());
+
+        cafe.setIngredientes(ingredientes);
+
         return cafe;
     } 
 }

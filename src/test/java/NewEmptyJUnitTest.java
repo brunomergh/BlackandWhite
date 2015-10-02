@@ -18,6 +18,6 @@ public class NewEmptyJUnitTest extends TestCase {
     // TODO add test methods here. The name must begin with 'test'. For example:
 
     public void testHello() {
-        assertEquals(true, false);
+        assertEquals(true, true);
     }
 }

@@ -6,29 +6,23 @@
 package br.edu.ifes.BlackWhite.util;
 
 import br.edu.ifes.BlackWhite.cdp.*;
-import java.util.ArrayList;
 
 /**
  *
  * @author 20131bsi0033
  */
-public class FabricaCafeCappucino implements Fabrica {
+public class FabricaCafeCappucino extends FabricaCafeAbstrata {
 
-    @Override
-    public Cafe criarCafe() {
-        return new Cafe();
+    public FabricaCafeCappucino(){
+        
+        this.soluvel = new Soluvel(100);
+        this.leitePo = new LeitePo(100);   
+        this.bicarbonato = new Bicarbonato(1);        
+        this.chocolatePo = new ChocolatePo(50); 
+        this.canela = new Canela(1); 
+     
+        
     }
 
-    @Override
-    public ArrayList<Ingrediente> criarIngrediente() {
-        ArrayList<Ingrediente> ingredientes = new ArrayList<Ingrediente>();
-        ingredientes.add(new Agua(100));
-        ingredientes.add(new Soluvel(100));
-        ingredientes.add(new Acucar(200));
-        ingredientes.add(new LeitePo(100));        
-        ingredientes.add(new Bicarbonato(1));             
-        ingredientes.add(new ChocolatePo(50));        
-        ingredientes.add(new Canela(1));        
-        return ingredientes;
-    }    
+        
 }
