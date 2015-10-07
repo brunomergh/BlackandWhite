@@ -17,17 +17,19 @@ public class FabricaCafe {
     
     public static Cafe criarCafe(String nome) {
         Fabrica fabrica;
+        Cafe cafe;
         
         if(nome.equals("normal")) {
-            fabrica = new FabricaCafeNormal();
+            fabrica = new FabricaCafeNormal();    
         }else if(nome.equals("zero cafeina")) {
-            fabrica = new FabricaCafeSemCafeina();            
-        }else {
-            fabrica = new FabricaCafeCappucino(); 
+            fabrica = new FabricaCafeSemCafeina();   
+        }else if(nome.equals("cappucino")) {
+            fabrica = new FabricaCafeCappucino();
+        }else{
+            fabrica = null;
         }
 
-        Cafe cafe = fabrica.criarCafe();
-        
+        cafe = fabrica.criarCafe();
         ArrayList<Ingrediente> ingredientes = new ArrayList<Ingrediente>();
         
         ingredientes.add(fabrica.criarAgua());
@@ -39,7 +41,6 @@ public class FabricaCafe {
         ingredientes.add(fabrica.criarSoluvel());
         ingredientes.add(fabrica.criarZeroCafeina());
 
-        
         cafe.setIngredientes(ingredientes);
 
         return cafe;

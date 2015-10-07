@@ -10,6 +10,7 @@ import br.edu.ifes.BlackWhite.util.FabricaCafe;
 import br.edu.ifes.BlackWhite.util.FabricaCafeCappucino;
 import br.edu.ifes.BlackWhite.util.FabricaCafeNormal;
 import br.edu.ifes.BlackWhite.util.FabricaCafeSemCafeina;
+import junit.framework.Assert;
 import junit.framework.TestCase;
 
 /**
@@ -23,7 +24,7 @@ public class Testes extends TestCase {
     // TODO add test methods here. The name must begin with 'test'. For example:
     public void testAgua() {
         Agua agua = new Agua(10);
-        assertEquals(agua.getQtd(), 10);
+        Assert.assertEquals(agua.getQtd(), 10);
     }
     
     public void testAcucar() {
