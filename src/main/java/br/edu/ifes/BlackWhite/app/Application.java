@@ -10,6 +10,7 @@ import br.edu.ifes.BlackWhite.util.CafeCappucinoBuilder;
 import br.edu.ifes.BlackWhite.util.CafeNormalBuilder;
 import br.edu.ifes.BlackWhite.util.CafeSemCafeinaBuilder;
 import br.edu.ifes.BlackWhite.util.Cafeteiro;
+import br.edu.ifes.BlackWhite.util.CodeMaker;
 import br.edu.ifes.BlackWhite.util.FabricaCafe;
 import br.edu.ifes.BlackWhite.util.Promocional;
 
@@ -46,6 +47,10 @@ public class Application {
         System.out.println("Preco builder: " + cafe3.getPreco());
         System.out.println("cafe builder: " + cafe4);
         System.out.println("Preco builder: " + cafe4.getPreco());
+        
+        System.out.println("Domingo: "+CodeMaker.domingo.getDiaSemana());
+        System.out.println("Domingo: "+CodeMaker.domingo.getDiaSemana());
+        System.out.println("Segunda: "+CodeMaker.segunda.getDiaSemana());
     }
 }
 

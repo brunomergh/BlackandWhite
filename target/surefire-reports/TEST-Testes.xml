@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="0" time="0.039" errors="0" skipped="0" tests="14" name="Testes">
+<testsuite failures="0" time="0.042" errors="0" skipped="0" tests="14" name="Testes">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.7.0_40\jre\bin"/>
@@ -62,17 +62,17 @@
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
   <testcase time="0.002" classname="Testes" name="testCafe"/>
-  <testcase time="0.001" classname="Testes" name="testeLeitePo"/>
-  <testcase time="0" classname="Testes" name="testSoluvel"/>
+  <testcase time="0" classname="Testes" name="testeLeitePo"/>
+  <testcase time="0.001" classname="Testes" name="testSoluvel"/>
   <testcase time="0.001" classname="Testes" name="testLeite"/>
   <testcase time="0" classname="Testes" name="testCanela"/>
   <testcase time="0.001" classname="Testes" name="testAcucar"/>
   <testcase time="0.001" classname="Testes" name="testAgua"/>
-  <testcase time="0" classname="Testes" name="testBicarbonato"/>
-  <testcase time="0.001" classname="Testes" name="testZeroCafeina"/>
-  <testcase time="0.002" classname="Testes" name="testFabricaCafe"/>
+  <testcase time="0.001" classname="Testes" name="testBicarbonato"/>
+  <testcase time="0" classname="Testes" name="testZeroCafeina"/>
+  <testcase time="0.003" classname="Testes" name="testFabricaCafe"/>
   <testcase time="0.001" classname="Testes" name="testFabricaCafeCappucino"/>
   <testcase time="0" classname="Testes" name="testChocolatePo"/>
-  <testcase time="0.001" classname="Testes" name="testFabricaCafeNormal"/>
+  <testcase time="0" classname="Testes" name="testFabricaCafeNormal"/>
   <testcase time="0" classname="Testes" name="testFabricaCafeSemCafeina"/>
 </testsuite>
