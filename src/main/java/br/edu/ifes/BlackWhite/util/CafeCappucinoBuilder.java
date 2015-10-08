@@ -16,6 +16,7 @@ public class CafeCappucinoBuilder extends BuilderAbstrato {
     
     
     public CafeCappucinoBuilder() {
+        cafe.setPreco(5.0);
         this.fabrica = new FabricaCafeCappucino();
     }
     

@@ -124,21 +124,21 @@ public class Testes2 {
     @Test
     public void TestarCafeNormalBuilder() {
         cafe = atendente.criarCafe(new CafeNormalBuilder());
-        Assert.assertEquals(1.0, cafe.getPreco());
+        Assert.assertEquals(2.0, cafe.getPreco());
         //System.out.println("Cafe: " + cafe);
     }
     
     @Test
     public void TestarCafeSemCafeinaBuilder() {
         cafe = atendente.criarCafe(new CafeSemCafeinaBuilder());
-        Assert.assertEquals(1.5, cafe.getPreco());
+        Assert.assertEquals(3.0, cafe.getPreco());
         //System.out.println("Cafe: " + cafe);
     }
     
    @Test
     public void TestarCafeCappucinoBuilder() {
         cafe = atendente.criarCafe(new CafeCappucinoBuilder());
-        Assert.assertEquals(2.5, cafe.getPreco());
+        Assert.assertEquals(5.0, cafe.getPreco());
         //System.out.println("Cafe: " + cafe);
     } 
 }
