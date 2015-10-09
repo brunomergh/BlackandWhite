@@ -15,7 +15,7 @@ public class FabricaCafeNormal extends FabricaCafeAbstrata{
 
     @Override
     public Cafe criarCafe() {
-        return new Cafe(2.0);
+        return new Cafe(2.0,"normal");
     }
     
     public FabricaCafeNormal(){

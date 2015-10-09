@@ -13,16 +13,28 @@ import java.util.ArrayList;
  */
 public class Cafe {
     protected double preco;
+    protected String name;
     protected ArrayList<Ingrediente> ingredientes;
     
     public Cafe() {
     }
 
-    public Cafe(double preco) {
+    public Cafe(double preco, String name) {
         this.preco = preco;
+        this.name = name;
     }
     
-    
+    public String toString(){
+        return this.name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
     
     public Cafe(int preco, ArrayList<Ingrediente> ingrediente){
         this.preco = preco;

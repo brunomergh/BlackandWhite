@@ -16,7 +16,7 @@ public class FabricaCafeSemCafeina extends FabricaCafeAbstrata {
     
     @Override
     public Cafe criarCafe() {
-        return new Cafe(3.0);
+        return new Cafe(3.0,"zero cafeina");
     }
     
     public FabricaCafeSemCafeina(){

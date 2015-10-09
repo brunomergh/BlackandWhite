@@ -12,22 +12,11 @@ import br.edu.ifes.BlackWhite.cdp.Cafe;
  *
  * @author Bruno Dell'Orto
  */
-public class Promocional {
+public enum Atendente {
     
-    private static Promocional promocional;
+    INSTANCE;
     
-    
-    private Promocional() {
-    }        
-    public static synchronized  Promocional getInstance()
-    {
-        if (promocional == null){
-            promocional = new Promocional();
-        }
-        return promocional;
-    }
-    
-    public synchronized  Cafe Promocao(String diaSemana){
+   public synchronized Cafe Promocao(String diaSemana){
         
         Cafe cafe = new Cafe();
         
@@ -43,5 +32,4 @@ public class Promocional {
         }
         return cafe;
     }    
-   
 }

@@ -10,8 +10,9 @@ import br.edu.ifes.BlackWhite.util.CafeCappucinoBuilder;
 import br.edu.ifes.BlackWhite.util.CafeNormalBuilder;
 import br.edu.ifes.BlackWhite.util.CafeSemCafeinaBuilder;
 import br.edu.ifes.BlackWhite.util.Cafeteiro;
-import br.edu.ifes.BlackWhite.util.CodeMaker;
+import br.edu.ifes.BlackWhite.util.Atendente;
 import br.edu.ifes.BlackWhite.util.FabricaCafe;
+import br.edu.ifes.BlackWhite.util.FabricaCafeMagic;
 import br.edu.ifes.BlackWhite.util.Promocional;
 
 /**
@@ -21,36 +22,17 @@ import br.edu.ifes.BlackWhite.util.Promocional;
 public class Application {
     public static void main(String args[]) {
         
-        Promocional dia = new Promocional();
-        Cafe cafep = dia.Promocao("domingo");
+        Promocional dia = Promocional.getInstance(); 
+        
+        Cafe cafep = dia.Promocao("domingo"); 
+        System.out.println("cafe de domingo: " + cafep);
         System.out.println("preco: " + cafep.getPreco());
         
-        Cafe cafe = FabricaCafe.criarCafe("normal");
-        System.out.println("cafe normal: " + cafe);
-        System.out.println("preco: " + cafe.getPreco());
+        FabricaCafeMagic fabricaCafeMagic = FabricaCafeMagic.getInstance(); 
         
-        cafe = FabricaCafe.criarCafe("zero cafeina");
-        System.out.println("cafe zero cafeina: " + cafe);
-        System.out.println("preco: " + cafe.getPreco());
-        
-        cafe = FabricaCafe.criarCafe("cappucino");
-        System.out.println("cafe cappucino: " + cafe);
-        System.out.println("preco: " + cafe.getPreco());
-        
-        Cafeteiro atendente = new Cafeteiro();
-        Cafe cafe2 = atendente.criarCafe(new CafeNormalBuilder());
-        Cafe cafe3 = atendente.criarCafe(new CafeSemCafeinaBuilder());
-        Cafe cafe4 = atendente.criarCafe(new CafeCappucinoBuilder());
-        System.out.println("cafe builder: " + cafe2);
-        System.out.println("Preco builder: " + cafe2.getPreco());
-        System.out.println("cafe builder: " + cafe3);
-        System.out.println("Preco builder: " + cafe3.getPreco());
-        System.out.println("cafe builder: " + cafe4);
-        System.out.println("Preco builder: " + cafe4.getPreco());
-        
-        System.out.println("Domingo: "+CodeMaker.domingo.getDiaSemana());
-        System.out.println("Domingo: "+CodeMaker.domingo.getDiaSemana());
-        System.out.println("Segunda: "+CodeMaker.segunda.getDiaSemana());
+        fabricaCafeMagic.criarCafe("normal");
+
+        Atendente.INSTANCE.Promocao("segunda");
     }
 }
 

@@ -5,6 +5,7 @@
  */
 
 import br.edu.ifes.BlackWhite.cdp.Cafe;
+import br.edu.ifes.BlackWhite.util.Atendente;
 import br.edu.ifes.BlackWhite.util.CafeCappucinoBuilder;
 import br.edu.ifes.BlackWhite.util.CafeNormalBuilder;
 import br.edu.ifes.BlackWhite.util.CafeSemCafeinaBuilder;
@@ -47,98 +48,98 @@ public class Testes2 {
     @Test
     public void TestarSegundaFeira() {
         
-        Promocional dia = new Promocional();
-        cafe = dia.Promocao("segunda-feira");
-        System.out.println("Preco Segunda: " + cafe.getPreco());
+        Cafe cafe = Atendente.INSTANCE.Promocao("segunda-feira");
+        Assert.assertEquals(1.0, cafe.getPreco());
+        assertEquals("normal", cafe.toString());
     }
     
     @Test
     public void TestarTercaFeira() {
         
-        Promocional dia = new Promocional();
-        cafe = dia.Promocao("terca-feira");
-        System.out.println("Preco terca: " + cafe.getPreco());
+        Cafe cafe = Atendente.INSTANCE.Promocao("terca-feira");
+        Assert.assertEquals(1.5, cafe.getPreco());
+        assertEquals("zero cafeina", cafe.toString());
     }
 
     @Test
     public void TestarQuartaFeira() {
         
-        Promocional dia = new Promocional();
-        cafe = dia.Promocao("quarta-feira");
-        System.out.println("Preco quarta: " + cafe.getPreco());
+        Cafe cafe = Atendente.INSTANCE.Promocao("quarta-feira");
+        Assert.assertEquals(1.0, cafe.getPreco());
+        assertEquals("normal", cafe.toString());
     }
     
     @Test
     public void TestarQuintaFeira() {
         
-        Promocional dia = new Promocional();
-        cafe = dia.Promocao("quinta-feira");
-        System.out.println("Preco quinta: " + cafe.getPreco());
+        Cafe cafe = Atendente.INSTANCE.Promocao("quinta-feira");
+        Assert.assertEquals(1.5, cafe.getPreco());
+        assertEquals("zero cafeina", cafe.toString());
     }
     
     @Test
     public void TestarSextaFeira() {
         
-        Promocional dia = new Promocional();
-        cafe = dia.Promocao("sexta-feira");
-        System.out.println("Preco sexta: " + cafe.getPreco());
+        Cafe cafe =Atendente.INSTANCE.Promocao("sexta-feira");
+        Assert.assertEquals(1.0, cafe.getPreco());
+        assertEquals("normal", cafe.toString());
     }
     
     @Test
     public void TestarSabado() {
         
-        Promocional dia = new Promocional();
-        cafe = dia.Promocao("sabado");
-        System.out.println("Preco sabado: " + cafe.getPreco());
+        Cafe cafe =Atendente.INSTANCE.Promocao("sabado");
+        Assert.assertEquals(1.5, cafe.getPreco());
+        assertEquals("zero cafeina", cafe.toString());
     }
     
     @Test
     public void TestarDomingo() {
         
-        Promocional dia = new Promocional();
-        cafe = dia.Promocao("domingo");
-        System.out.println("Preco domingo: " + cafe.getPreco());
+        Cafe cafe =Atendente.INSTANCE.Promocao("domingo");
+        Assert.assertEquals(2.5, cafe.getPreco());
+        assertEquals("cappucino", cafe.toString());
     }
     
     @Test
     public void TestarCafeNormal() {
         cafe = FabricaCafe.criarCafe("normal");
         Assert.assertEquals(2.0, cafe.getPreco());
-        //System.out.println("Cafe: " + cafe);
+        assertEquals("normal", cafe.toString());
     }
 
     @Test
     public void TestarCafeSemCafeina() {
         cafe = FabricaCafe.criarCafe("zero cafeina");
         Assert.assertEquals(3.0, cafe.getPreco());
-        //System.out.println("Cafe: " + cafe);
+        assertEquals("zero cafeina", cafe.toString());
     }
 
     @Test
     public void TestarCafeCappucino() {
         cafe = FabricaCafe.criarCafe("cappucino");
         Assert.assertEquals(5.0, cafe.getPreco());
-        //System.out.println("Cafe: " + cafe);
+        assertEquals("cappucino", cafe.toString());
     }
     
     @Test
     public void TestarCafeNormalBuilder() {
         cafe = atendente.criarCafe(new CafeNormalBuilder());
         Assert.assertEquals(2.0, cafe.getPreco());
-        //System.out.println("Cafe: " + cafe);
+        assertEquals("normal", cafe.toString());
     }
     
     @Test
     public void TestarCafeSemCafeinaBuilder() {
         cafe = atendente.criarCafe(new CafeSemCafeinaBuilder());
         Assert.assertEquals(3.0, cafe.getPreco());
-        //System.out.println("Cafe: " + cafe);
+        assertEquals("zero cafeina", cafe.toString());
     }
     
    @Test
     public void TestarCafeCappucinoBuilder() {
         cafe = atendente.criarCafe(new CafeCappucinoBuilder());
         Assert.assertEquals(5.0, cafe.getPreco());
-        //System.out.println("Cafe: " + cafe);
+        assertEquals("cappucino", cafe.toString());
     } 
 }

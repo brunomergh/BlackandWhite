@@ -17,6 +17,7 @@ public class CafeSemCafeinaBuilder extends BuilderAbstrato {
     
     public CafeSemCafeinaBuilder() {
         cafe.setPreco(3.0);
+        cafe.setName("zero cafeina");
         this.fabrica = new FabricaCafeSemCafeina();
     }
     

@@ -19,6 +19,7 @@ public class CafeNormalBuilder extends BuilderAbstrato{
     public CafeNormalBuilder()
     {
         cafe.setPreco(2.0);
+        cafe.setName("normal");
         this.fabrica = new FabricaCafeNormal();
     }
     
