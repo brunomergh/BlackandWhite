@@ -31,7 +31,7 @@
         <hr>
 
         <section id="main_content">
-          <p>O modelo abaixo é do exercício 1 de POO2 que consiste em aplicar o padrão de projeto "Fabrica abstrata".  </p>
+          <p>O modelo abaixo é do exercício 1 de POO2 que consiste em aplicar os padrões de projeto,Abstract Factory, Factory Method, Builder e Singleton.    </p>
 
 <p>1)No padrão Abstract Factory, ou Fábrica Abstrata, a aplicação interage com uma 'fábrica genérica de objetos‘ os objetos serão gerados efetivamente pela fábrica concreta que estiver sendo utilizada no momento.
 Intenção: fornecer uma interface para a criação de famílias de objetos relacionados ou dependentes sem especificar suas classes.
@@ -41,7 +41,7 @@ Aplicabilidade: aplicável a situações nas quais
 – a ‘família’ de objetos-produto é projetada para ser usada em conjunto;
 – deseja-se revelar apenas a interface da biblioteca de classes-produto e não a sua implementação completas;</p>
 
-<p>2)A intenção do padrão segundo:
+<p>2)A intenção do padrão Builder:
 “Separar a construção de um objeto complexo de sua representação de modo que o mesmo processo de construção possa criar diferentes representações.”
 Separar a construção da representação segue a mesma ideia dos padrões Factory Method e Abstract Factory. No entanto o padrão Builder permite separar os passos de construção de um objeto em pequenos métodos. Então vamos direto ao código para ver o que muda.No padrão Builder temos também uma interface comum para todos os objetos que constroem outros objetos. Essa interface Builder define todos os passos necessários para construir um objeto(essa classe no código é chamada de Builder()).</p>
 
